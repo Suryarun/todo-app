@@ -40,17 +40,22 @@ function refreshlist(){
     div.className='element';
     let span=document.createElement('span');
     span.className='text';
-    span.addEventListener('click',(e)=>{
+    span.textContent=x;
+    let span2=document.createElement('span');
+    span2.className="material-symbols-outlined";
+    span2.textContent='edit';
+    span2.addEventListener('click',(e)=>{
         edit(index);
     })
-    span.textContent=x;
     let btn=document.createElement('button');
     btn.addEventListener('click',()=>{
         onremove(index);
     })
     btn.textContent='remove';
     btn.className="button";
+    div.appendChild(span2);
     div.appendChild(span);
+
     div.appendChild(btn);
     li.appendChild(div);
     ul.appendChild(li);
