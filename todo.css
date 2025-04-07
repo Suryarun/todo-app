@@ -1,4 +1,6 @@
-
+body{
+    background-color:  #CAE7DF;
+}
 #container{
     /* display: block; */
     text-align: center;
@@ -27,13 +29,12 @@
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #dad7d7;
     box-sizing: border-box;
 }
 .li{
     list-style: none;
-    border: 1px solid #ccc;
-    width: 50%;
-    margin-left: 25%;
+    display: inline;
 }
 .button{
     background-color: #a24f35;
